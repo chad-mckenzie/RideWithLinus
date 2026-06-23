@@ -603,7 +603,7 @@ function renderCredits() {
       <td class="stat-cell hide-mobile">${c.height_ft ? `<strong>${c.height_ft}</strong> ft` : '—'}</td>
       <td class="stat-cell hide-mobile">${c.speed_mph  ? `<strong>${c.speed_mph}</strong> mph` : '—'}</td>
       <td class="stat-cell hide-mobile">${c.length_ft  ? `<strong>${(c.length_ft/5280).toFixed(2)}</strong> mi` : '—'}</td>
-      <td class="stat-cell">${c.date ? c.date.slice(0,7) : '—'}</td>
+      
       <td class="reaction">${REACTION_LABELS[c.reaction] || '—'}</td>
     </tr>
   `).join('');
